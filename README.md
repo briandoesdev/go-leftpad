@@ -16,16 +16,18 @@ go get github.com/briandoesdev/go-leftpad
 ## Usage
 Who knew left padding could be so fun... and unnecessary?
 ```
+package main
+
 import (
 	"fmt"
+
 	"github.com/briandoesdev/go-leftpad"
 )
 
 func main() {
-    // Outputs: "   42"
-	fmt.Println(leftpad("42", 5, ' ')) 
+	//Outputs:   foo
+	fmt.Println(leftpad.Leftpad("foo", 5, ' '))
 }
-
 ```
 
 ## Contributing
