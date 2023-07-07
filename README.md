@@ -21,12 +21,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/briandoesdev/go-leftpad"
+	. "github.com/briandoesdev/go-leftpad"
 )
 
 func main() {
 	//Outputs:   foo
-	fmt.Println(leftpad.Leftpad("foo", 5, ' '))
+	fmt.Println(Leftpad("foo", 5, ' '))
 }
 ```
 
