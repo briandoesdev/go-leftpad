@@ -49,4 +49,4 @@ __Q: Why did you?__
 ## License
 MIT License. Because sharing is caring, especially when it comes to overcomplicated solutions to simple problems.
 
-And remember, I don't believe in making things simple. Why have less, when you can have more?
+Btw, this is a joke package. please dont actually use this.
