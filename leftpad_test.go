@@ -6,7 +6,7 @@ func TestLeftpad(t *testing.T) {
 	for _, testcase := range []struct {
 		s string
 		n int
-		c byte
+		c rune
 		e string
 	}{
 		{"foo", 5, ' ', "  foo"},
@@ -18,6 +18,7 @@ func TestLeftpad(t *testing.T) {
 		{"negative", -1, ' ', "negative"},
 		{"negative", -1, '0', "negative"},
 		{"", 0, ' ', ""},
+		{"123456789", 11, '👍', "👍👍123456789"},
 	} {
 		if r := Leftpad(testcase.s, testcase.n, testcase.c); r != testcase.e {
 			t.Errorf("leftpad(%q, %d, %q) = %q, expected %q", testcase.s, testcase.n, testcase.c, r, testcase.e)
