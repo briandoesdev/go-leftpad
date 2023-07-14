@@ -19,7 +19,7 @@ func TestLeftpad(t *testing.T) {
 		{"negative", -1, '0', "negative"},
 		{"", 0, ' ', ""},
 	} {
-		if r := leftpad(testcase.s, testcase.n, testcase.c); r != testcase.e {
+		if r := Leftpad(testcase.s, testcase.n, testcase.c); r != testcase.e {
 			t.Errorf("leftpad(%q, %d, %q) = %q, expected %q", testcase.s, testcase.n, testcase.c, r, testcase.e)
 		}
 	}
